@@ -24,18 +24,22 @@ public class Main {
     }
 
     // task 3
-    public static void distance (int distance1){
-        if ( distance1 < 20) {
+    public static int distance (int qwe){
+        int distance = qwe;
+
+        if ( distance < 20) {
             System.out.println("Потребуется 1 день для доставки.");
         }
-        else if ( distance1 >= 20 && distance1 < 60) {
+        else if ( distance >= 20 && distance < 60) {
             System.out.println("Потребуется 2 дня для доставки.");
         }
-        else if ( distance1 >= 60 && distance1 < 100) {
+        else if ( distance >= 60 && distance < 100) {
             System.out.println("Потребуется 3 дня для доставки.");
         } else {
             System.out.println("Свыше 100 км доставки нет.");
         }
+
+        return distance;
 
     }
 
@@ -58,8 +62,9 @@ public class Main {
 
             // task 3
 
-            int deliveryDistance = 74;
-            distance(deliveryDistance);
+            int deliveryDistance = 10;
+            int asd = distance(deliveryDistance);
+
 
 
         }
